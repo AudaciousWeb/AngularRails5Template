@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.3.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '>= 5.0.0.rc1', '< 5.1'
 # Use sqlite3 as the database for Active Record
@@ -22,6 +22,9 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5.x'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
+# Icons
+gem 'font-awesome-rails'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -30,7 +33,16 @@ gem 'jbuilder', '~> 2.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# CORS handling for cross origin requests
 gem 'rack-cors'
+# Better mark up/replacement for HTML
+gem 'haml-rails'
+# Bootstrap library
+gem 'bootstrap-sass'
+# Bunch of awesome SCSS cross browser helpers and other neat mixins, thank you thoughtbot
+gem 'bourbon'
+# Angular js, nuff said
+gem 'angularjs-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

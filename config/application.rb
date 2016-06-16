@@ -12,13 +12,14 @@ module AngularActionCableRailsTemplate
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
-    # Set up cors to allow JS to transmit from any origin
+    # Set up CORS(Cross-origin resource sharing) to allow requests from any origin, allowing API/HTTP usage outside the web
     config.middleware.insert_before 0, "Rack::Cors" do
-      allow do
 
+      allow do
         origins '*' # Allow all origins
-        resource '*', :headers => :any, :methods => [:post, :get, :patch, :delete]
+        resource '*', :headers => :any, :methods => [:post, :get, :patch, :delete] # CRUD requests
       end
+
     end
 
   end
